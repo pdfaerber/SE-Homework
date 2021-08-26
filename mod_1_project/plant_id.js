@@ -18,7 +18,7 @@
  *
  * ***********************************************************************************/
 let rqst_id = "26887650";
-const API_KEY = "api_key=vTL81MsH12HhssjdSLTA8gBwNmDCizzF3gqozt0QQSzPmah9xL";
+const API_KEY = "api_key= < ------------------------------------------>";
 //JSON REST API uses slash notation for parameters 
 let BASE_URL = "https://api.plant.id/v2/"
 let id_endpoint = "get_identification_result&" 
@@ -30,7 +30,7 @@ let url = `https://api.plant.id/v2/get_identification_result/`+ API_KEY;
 function getPlantIds() {
   alert("plant me");
   const data = {
-    api_key: "vTL81MsH12HhssjdSLTA8gBwNmDCizzF3gqozt0QQSzPmah9xL", //my plantID api key
+    api_key: "<----------------------------------------------------->", //my plantID api key
     id: rqst_id,
     plant_details: [
       "common_names",
@@ -49,8 +49,13 @@ function getPlantIds() {
     method: "GET",
     mode: "cors",
     headers: {
+<<<<<<< HEAD
       "Content-Type": "application/json",
       // "Api-Key": "vTL81MsH12HhssjdSLTA8gBwNmDCizzF3gqozt0QQSzPmah9xL"
+=======
+      "Content-Type": "application/json"
+      //  "Api-Key": <----------------------------------------->,
+>>>>>>> 7a0203e210e62b959659a8ec24c66b82364ac11f
     },
   }).then((response) => console.log(response))
   .then((data) => {
