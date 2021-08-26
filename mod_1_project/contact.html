@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-</head>
-<body>
-    <form action=""></form>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="stylesheet" type="text/css" href="contact_styles.css" />
+  </head>
+
+  <body>
+    <div class="form-container">
+      <form class="form-item" action="https://formsubmit.co/pdfaerber_perscholas@outlook.com" method="POST">
+        <label for="questions">Tips or Questions for Patrick's Plants?</label>
+        <br>
+        <textarea name="t_textarea" cols="40" rows="10" placeholder="Wanna share some tips?"></textarea>
+        <br />
+        <textarea name="q_textarea" cols="40" rows="10" placeholder="Have a question?"></textarea>
+        <br>
+        <input type="text" name="qt_name" id="qt_name" placeholder="Name"/>
+        <br>
+        <input type="email" name="qt_email" placeholder="Email"/>
+        
+        <br />
+        <button>Ask Me / Tell Me</button>
+        <input type="checkbox">
+      </form>
+      
+      <form class="form-item" action="">
+        <label for="newsletter">Sign up for Newsletter or </label>
+        <br>
+        <input type="text" placeholder="Name" required/>
+        <br />
+        <input type="text" placeholder="Email" required />
+        <br />
+        <button>OK</button>
+      </form>
+      
+      <form class="form-item" action="">
+        <label for="donations">Sponsor a Plant/Make a Donation</label>
+        <br>
+        <input type="number" placeholder="Plant Number" />
+        <br>
+        <input type="number" placeholder="Donation Amount (US$)" />
+        <br />
+        <input type="text" placeholder="Name"/>
+        <br>
+        <input type="text" placeholder="Email" />
+        <br />
+        <button>OK</button> 
+        <br>
+        <br>
+        <textarea name="donate_msg" id="donate_msg" cols="40" rows="10" placeholder="Thank you for your donation message"></textarea>
+      </form>
+
+    </div>
+  </body>
 </html>
