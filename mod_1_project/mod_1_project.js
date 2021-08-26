@@ -1,4 +1,4 @@
-//plantID API Key: vTL81MsH12HhssjdSLTA8gBwNmDCizzF3gqozt0QQSzPmah9xL
+//plantID API Key:"-----------------------------------------------"
 // document.getElementById("button").onclick = alert("button works")
 document.getElementById("button").onclick = function sendIdentification() {
   const files = [...document.getElementById("plant_select").files];
@@ -17,7 +17,7 @@ document.getElementById("button").onclick = function sendIdentification() {
     console.log(base64files);
 
     const data = {
-      api_key: "vTL81MsH12HhssjdSLTA8gBwNmDCizzF3gqozt0QQSzPmah9xL", //my plantID api key
+      api_key: "-----------------------------------------", //my plantID api key
       id,
       images: base64files,
       modifiers: ["crops_fast", "similar_images"],
