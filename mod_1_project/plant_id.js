@@ -8,7 +8,7 @@
  * based on photos I've taken with my iPhone and returning some of the key values
  * using the fetch method with JSON REST API that Plant ID provides.
  *
- * PlantID API response values in JSON format that I intend to display in the browser
+ * PlantID API response values in JSON format that I intend to display in the browser.
  *
  * plant_details.common_names
  * plant_details.edible_parts
@@ -23,7 +23,7 @@ const API_KEY = "api_key=vTL81MsH12HhssjdSLTA8gBwNmDCizzF3gqozt0QQSzPmah9xL";
 let BASE_URL = "https://api.plant.id/v2/"
 let id_endpoint = "get_identification_result&" 
 let URL = BASE_URL+id_endpoint+API_KEY
-// let url = `https://api.plant.id/v2/get_identification_result/`+ API_KEY;
+let url = `https://api.plant.id/v2/get_identification_result/`+ API_KEY;
 
 
 
@@ -45,18 +45,18 @@ function getPlantIds() {
   };
 
   
-  fetch(URL, {
+  fetch(url, {
     method: "GET",
     mode: "cors",
     headers: {
-      "Content-Type": "application/json"
-      //  "Api-Key": vTL81MsH12HhssjdSLTA8gBwNmDCizzF3gqozt0QQSzPmah9xL,
+      "Content-Type": "application/json",
+      // "Api-Key": "vTL81MsH12HhssjdSLTA8gBwNmDCizzF3gqozt0QQSzPmah9xL"
     },
   }).then((response) => console.log(response))
   .then((data) => {
     console.log("Success:", data);
   })
-  // .catch((error) => {
-  // //   console.error("Error:", error);
-  // });
+  .catch((error) => {
+    console.error("Error:", error);
+  });
 } //close getPlantIds ()
